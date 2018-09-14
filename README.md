@@ -1,2 +1,2 @@
 # bustracker
-Projeto de desenvolvimento mobile da disciplina de Engenharia de Software da Universidade Federal do Ceará - Campus Quixadá.
+Projeto de desenvolvimento mobile da disciplina de Engenharia de Software da Universidade Federal do Ceará - Campus Quixadá, que tem como objetivo reduzir o tempo de espera na fila dos ônibus dos estudantes da UFC e IFCE de Quixadá, utilizando de compartilhamento de localização colaborativo para identificar a localização dos ônibus e informar o tempo estimado para chegar em algum ponto de parada da rota.
