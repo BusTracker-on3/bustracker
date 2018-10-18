@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "565619371142",
+    "firebase_url": "https://bustracker-6889c.firebaseio.com",
+    "project_id": "bustracker-6889c",
+    "storage_bucket": "bustracker-6889c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565619371142:android:08174d17a961dea0",
+        "android_client_info": {
+          "package_name": "br.ufc.qxd.bustracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565619371142-hutb06348lrt6294qvnjgoc32lsnb773.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.ufc.qxd.bustracker",
+            "certificate_hash": "e946bc4cd5274f8575e2c94d85a262b21f2ba99d"
+          }
+        },
+        {
+          "client_id": "565619371142-iskh0n78jp8p3o20fbqaum0ov72sb0sp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQjHUnKdJi3sHM17r00E_YLPk3DgGTXLk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565619371142-iskh0n78jp8p3o20fbqaum0ov72sb0sp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

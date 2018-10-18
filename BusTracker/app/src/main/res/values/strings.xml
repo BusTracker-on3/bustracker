@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BusTracker</string>
+    <string name="new_user">Cadastre-se</string>
+    <string name="user_name">Nome</string>
+    <string name="user_email">E-mail</string>
+    <string name="user_registration">Matricula</string>
+    <string name="user_password">Senha</string>
+    <string name="save_user">Cadastrar</string>
+</resources>

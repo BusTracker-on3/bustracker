@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/new_user"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView android:text="@string/user_name"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/user_name"
+            android:inputType="text"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:text="@string/user_email"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/user_email"
+            android:inputType="textEmailAddress"
+            android:layout_height="45dp"/>
+
+        <TextView android:text="@string/user_registration"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/user_registration"
+            android:inputType="number"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:text="@string/user_password"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/user_password"
+            android:inputType="textPassword"
+            android:layout_height="45dp"/>
+
+        <Button
+            android:id="@+id/save_user"
+            android:text="@string/save_user"
+            android:onClick="register_new_user"
+            android:layout_marginTop="10dp"/>
+
+    </TableLayout>
+</ScrollView>
