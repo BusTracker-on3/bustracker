@@ -1,61 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
 
-        <LinearLayout
-            android:orientation="vertical">
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:hint="NOME"
+        android:inputType="text"
+        android:textColorHint="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/new_user"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"/>
-        </LinearLayout>
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:hint="E-MAIL"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name" />
 
-        <TextView android:text="@string/user_name"
-            android:textSize="20sp"/>
-        <EditText
-            android:id="@+id/user_name"
-            android:inputType="text"
-            android:layout_height="45dp"/>
+    <EditText
+        android:id="@+id/user_registration"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:hint="MATRICULA"
+        android:inputType="number"
+        android:textColorHint="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_password" />
 
-        <TextView
-            android:text="@string/user_email"
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"/>
-        <EditText
-            android:id="@+id/user_email"
-            android:inputType="textEmailAddress"
-            android:layout_height="45dp"/>
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:hint="SENHA"
+        android:inputType="textPassword"
+        android:textColorHint="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_email" />
 
-        <TextView android:text="@string/user_registration"
-            android:textSize="20sp"/>
-        <EditText
-            android:id="@+id/user_registration"
-            android:inputType="number"
-            android:layout_height="45dp"/>
+    <Button
+        android:id="@+id/save_user"
+        android:layout_width="129dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="8dp"
+        android:background="#08962e"
+        android:onClick="register_new_user"
+        android:text="@string/save_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_registration"
+        app:layout_constraintVertical_bias="1.0" />
 
-        <TextView
-            android:text="@string/user_password"
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"/>
-        <EditText
-            android:id="@+id/user_password"
-            android:inputType="textPassword"
-            android:layout_height="45dp"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="129dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#08962e"
+        android:onClick="exit_page_register"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save_user"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_registration"
+        app:layout_constraintVertical_bias="1.0" />
 
-        <Button
-            android:id="@+id/save_user"
-            android:text="@string/save_user"
-            android:onClick="register_new_user"
-            android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="187dp"
+        android:layout_height="133dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
 
-    </TableLayout>
-</ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import br.ufc.qxd.controller.ControllerLogin;
 import br.ufc.qxd.controller.ControllerRegister;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void get_register(View view){
         Intent intent = new Intent(MainActivity.this, ControllerRegister.class);
+        startActivity(intent);
+    }
+
+    public void get_login(View view){
+        Intent intent = new Intent(MainActivity.this, ControllerLogin.class);
         startActivity(intent);
     }
 }
