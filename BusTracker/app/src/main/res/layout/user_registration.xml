@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_light">
+    android:background="#7579ff">
 
 
     <EditText
@@ -79,7 +79,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginTop="8dp"
-        android:background="#08962e"
+        android:background="@android:color/background_light"
         android:onClick="register_new_user"
         android:text="@string/save_user"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -97,7 +97,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:background="#08962e"
+        android:background="@android:color/background_light"
         android:onClick="exit_page_register"
         android:text="Cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -120,6 +120,7 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user" />
+        app:srcCompat="@drawable/user"
+        tools:ignore="ContentDescription" />
 
 </android.support.constraint.ConstraintLayout>

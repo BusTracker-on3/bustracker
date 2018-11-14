@@ -6,71 +6,83 @@
     android:layout_height="match_parent"
     android:background="#7579ff">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarEditPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:minHeight="?android:attr/actionBarSize"
+        app:title="Atualizar Perfil"
+        app:titleTextColor="@android:color/white">
+
+    </android.support.v7.widget.Toolbar>
+
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="161dp"
-        android:layout_height="152dp"
+        android:id="@+id/imageView4"
+        android:layout_width="187dp"
+        android:layout_height="133dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
-        android:src="@drawable/bus_log"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user"
         tools:ignore="ContentDescription" />
 
     <EditText
-        android:id="@+id/login"
-        android:layout_width="309dp"
-        android:layout_height="54dp"
+        android:id="@+id/user_email_edit"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="72dp"
         android:hint="E-MAIL"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textColorHint="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <EditText
-        android:id="@+id/password"
-        android:layout_width="309dp"
-        android:layout_height="54dp"
+        android:id="@+id/user_password_edit_old"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:hint="SENHA"
+        android:layout_marginTop="44dp"
+        android:hint="SENHA ANTIGA"
         android:inputType="textPassword"
         android:textColorHint="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
+        app:layout_constraintTop_toBottomOf="@+id/user_email_edit" />
 
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="129dp"
-        android:layout_height="56dp"
+    <EditText
+        android:id="@+id/user_password_edit"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/background_light"
-        android:onClick="makeLogin"
-        android:text="Logar"
+        android:layout_marginTop="44dp"
+        android:hint="NOVA SENHA"
+        android:inputType="textPassword"
+        android:textColorHint="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/user_password_edit_old"
+        app:layout_constraintVertical_bias="0.039" />
+
 
 </android.support.constraint.ConstraintLayout>

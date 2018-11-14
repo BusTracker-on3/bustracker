@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7579ff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarCheckin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:minHeight="?android:attr/actionBarSize"
+        app:title="Checkin"
+        app:titleTextColor="@android:color/white">
+
+    </android.support.v7.widget.Toolbar>
+
+    <!-- android:minHeight="?attr/actionBarSize" -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="366dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="Onde está o ônibus?"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="369dp"
+        android:layout_height="325dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        <!--    app:layout_constraintTop_toBottomOf="@+id/textView3"> -->
+
+        <RadioButton
+            android:id="@+id/praca_leao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Praça do Leão"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/anexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anexo"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/construtec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Construtec"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/bikeShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bike Shop"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/ufc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UFC"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/ifce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IFCE"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/igrejaAdventista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Igreja Adventista"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/liquigas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liquigás"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rodoviaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rodoviária"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/notRoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ainda não fez rota"
+            android:textColor="@android:color/background_light" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="168dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="420dp"
+        android:text="Qual é o ônibus?"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="168dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0">
+        <!--       app:layout_constraintTop_toBottomOf="@+id/textView4" -->
+
+
+        <RadioButton
+            android:id="@+id/busUfc"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="Ônibus UFC "
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/busPrefeitura"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="Ônibus Prefeitura"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/busIFCE"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:text="Ônibus IFCE"
+            android:textColor="@android:color/background_light" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="184dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="424dp"
+        android:text="Estado de Lotação?"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="184dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/capLotado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lotado"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/capMedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mais ou Menos"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/capVago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vago"
+            android:textColor="@android:color/background_light" />
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

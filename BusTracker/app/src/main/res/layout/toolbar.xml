@@ -8,9 +8,13 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#08962e"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/holo_blue_bright"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="BusTracker"
+        app:titleTextColor="@android:color/white" />
+
+    <!--android:layout_height="?attr/actionBarSize" -->
 
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,9 +23,6 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="br.ufc.qxd.bustracker.HomeProfile" />
-
-
-
+        tools:context=".HomeProfile" />
 
 </LinearLayout>

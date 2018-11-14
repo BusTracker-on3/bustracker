@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/myCheckinInformation"
+        android:icon="@drawable/checkmark"
+        app:showAsAction="ifRoom|withText"
+        android:title="Check-in">
+    </item>
+</menu>

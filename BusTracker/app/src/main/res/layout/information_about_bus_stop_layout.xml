@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7579ff"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarInformation_bus_BusStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:minHeight="?android:attr/actionBarSize"
+        app:title="Informações sobre as Paradas"
+        app:titleTextColor="@android:color/white">
+    </android.support.v7.widget.Toolbar>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/TextViewSource"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Origem"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewDestiny"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Destino"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewDistance"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Distância"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewTime"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Tempo"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/TextViewSquad"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Praça do Leão"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewAnexo"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Anexo"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewDistancePracaAnexo"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="400 metros"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewTimePracaAnexo"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="5 minutos"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/TextViewAnexo1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Anexo"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewConstrutec"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Construtec"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewDistanceAnexo1Construtec"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="550 metros"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewTimeAnexo1Construtec"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="6 minutos"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/TextViewConstrutec1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Construtec"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewIFCE"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="IFCE"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewDistanceConstrutec1IFCE"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="4.100 metros"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewTimeConstrutec1IFCE"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="10 minutos"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/TextViewIFCE1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="IFCE"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewBikeShop"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Bike Shop"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewDistanceIFCE1BikeShop"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="3.900 metros"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewTimeIFCE1BikeShop"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="10 minutos"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/TextViewBikeShop1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Bike Shop"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewIgreja"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Igreja Adventista"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewDistanceBikeShop1Igreja"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="500 metros"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewTimeBikeShop1Igreja"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="5 minutos"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/TextViewIgreja1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Igreja Adventista"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewLiquigas"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Liquigás"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewDistanceIgreja1Liquigas"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="500 metros"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewTimeIgreja1Liquigas"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="4 minutos"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/TextViewLiquigas1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Liquigás"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewRodoviaria"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="Rodoviária"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewDistanceLiquigas1Rodoviaria"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="140 metros"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewTimeLiquigas1Rodoviaria"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="2 minutos"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+</TableLayout>

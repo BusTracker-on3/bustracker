@@ -1,12 +1,5 @@
 package br.ufc.qxd.model;
 
-import android.content.Context;
-import android.media.session.MediaSession;
-
-import com.firebase.client.Firebase;
-
-import br.ufc.qxd.util.LibraryClass;
-
 public class User {
     private String id;
     private String name;
@@ -71,4 +64,14 @@ public class User {
         this.id = id;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", registration=" + registration +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

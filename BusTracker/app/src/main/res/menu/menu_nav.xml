@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
-        <item android:id="@+id/nav_item_one"
+        <item android:id="@+id/nav_item_checkin"
             android:icon="@android:drawable/ic_dialog_map"
             android:title="Check-in" />
-        <item android:id="@+id/nav_item_two"
-            android:icon="@android:drawable/ic_menu_agenda"
-            android:title="Localização do Ônibus" />
-        <item android:id="@+id/nav_item_three"
-            android:icon="@android:drawable/ic_menu_call"
-            android:title="Item 3" />
     </group>
-    <group android:id="@+id/group_menu">
-        <item android:id="@+id/nav_item_four"
-            android:title="Item 4" />
-        <item android:id="@+id/nav_item_five"
-            android:title="Item 5" />
-    </group>
+
+    <item android:title="Informações">
+        <menu>
+            <item android:id="@+id/nav_item_information_bus_stop"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="Informações sobre as paradas" />
+        </menu>
+    </item>
+
     <item android:title="Conta">
         <menu>
-            <item android:id="@+id/nav_item_six"
+            <item android:id="@+id/nav_item_edit_perfil"
                 android:icon="@android:drawable/ic_menu_save"
                 android:title="Editar Perfil" />
+            <item android:id="@+id/nav_item_excluir_prefil"
+                android:icon="@android:drawable/ic_menu_delete"
+                android:title="Excluir Conta" />
             <item android:id="@+id/nav_item_logout"
                 android:icon="@android:drawable/ic_menu_close_clear_cancel"
                 android:title="Sair" />
